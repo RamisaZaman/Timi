@@ -19,7 +19,7 @@ export const useAIStore = create<AIState>((set) => ({
       const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: {
-          "Authorization": "Bearer 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",
+          "Authorization": "Bearer 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",
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
