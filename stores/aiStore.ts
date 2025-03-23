@@ -19,11 +19,11 @@ export const useAIStore = create<AIState>((set) => ({
       const response = await fetch("https://openrouter.ai/api/v1/chat/completions", {
         method: "POST",
         headers: {
-          "Authorization": "Bearer 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",
+          "Authorization": "Bearer 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",
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
-          "model": "google/gemma-3-27b-it",
+          "model": "google/gemma-3-27b-it:free",
           "messages": [
             {
               "role": "system",
